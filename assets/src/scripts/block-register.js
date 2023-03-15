@@ -62,13 +62,6 @@ const ResourceListing = (props) => {
     }, []);
 
     useEffect(()=>{
-        console.log("MktoForms2", MktoForms2);
-        if(MktoForms2){
-            MktoForms2.loadForm("//go.as-software.com", "074-NJA-430", 1124);
-        }
-    }, [MktoForms2])
-
-    useEffect(()=>{
         try {
             setIsLoaded(false);
             let API_Path = `/studioscience/v1/resources/filter?page=${currentPage}${searchTerm != '' ? `&searchTerm=${searchTerm}` : ''}${selectedTag != "All Topics" ? `&topic=${selectedTag}` : ''}${selectedCategories.length > 0 ? `&categories=${selectedCategories.join(',')}` : ''}`;
@@ -107,21 +100,17 @@ const ResourceListing = (props) => {
     }, [selectedCategories])
 
     const onNext = () => {
-        if(currentPage < maxPages){
-            setCurrentPage((cur)=>{ return cur +1});
-        }
+        setCurrentPage((cur)=>{ return cur +1});
     };
 
     const onPrevious = () => {
-        if(currentPage > 0){
-            setCurrentPage((cur)=>{ return cur -1});
-        }
+        setCurrentPage((cur)=>{ return cur -1});
     };
 
     return (
         <>
             <div className="c-mt-title-row-wrapper w-full hidden lg:flex lg:flex-row my-10">
-                <h2 className="c-mt-resource-title grow text-4xl font-medium leading-8 tracking-tight text-black sm:text-4xl pb-5 capitalize">
+                <h2 className="c-mt-resource-title grow text-4xl font-medium leading-8 tracking-tight text-black sm:text-4xl pb-5">
                     {attributes?.title}
                 </h2>
                 <div className="c-mt-resource-search flex-initial w-80">
@@ -145,7 +134,7 @@ const ResourceListing = (props) => {
                                 return (
                                     <>
                                     <div className="lg:flex flex-col overflow-hidden rounded-lg hidden " style={{'max-height': '300px'}}>
-                                        <div className="flex-shrink-0" style={{maxHeight: '153px'}}>
+                                        <div className="flex-shrink-0">
                                             <picture>
                                                 {resource.post_thumbnail ? (<img width="1600" height="1067" src={resource.post_thumbnail} className="lg:rounded-lg lg:rounded-br-[60px] bg-cover wp-post-image" alt="" decoding="async" loading="lazy"  />) : (<div className="placeholder bg-purple-100 lg:rounded-br-[60px]" style={{"min-width" : "255px", "min-height" : "170px"}} />)}
                                             </picture>
@@ -153,15 +142,7 @@ const ResourceListing = (props) => {
                                         <div className="flex flex-1 flex-col justify-between bg-white">
                                             <div className="flex-1">
                                                 <a href="#" className="mt-2 block">
-                                                    <p className="text-xl font-semibold text-black max-h-20" style={{
-                                                            maxWidth: '100%',
-                                                            maxHeight: '85px',
-                                                            display: '-webkit-box',
-                                                            WebkitBoxOrient: 'vertical',
-                                                            WebkitLineClamp: 3,
-                                                            overflow: 'hidden',
-                                                            textOverflow: 'ellipsis',
-                                                    }}>{resource?.post_title?.replace(/<\/?[^>]+(>|$)/g, "")?.replace(/\&nbsp;/g, '')}</p>
+                                                    <p className="text-xl font-semibold text-black">{resource?.post_title?.replace(/<\/?[^>]+(>|$)/g, "")?.replace(/\&nbsp;/g, '')}</p>
                                                 </a>
                                             </div>
                                             <div className="mt-6 flex items-center">
@@ -175,7 +156,7 @@ const ResourceListing = (props) => {
                                     </div>
                                     {/* Two components because tailwind is breaking right now so style is required for max height. */}
                                     <div className="flex flex-col overflow-hidden rounded-lg lg:hidden ">
-                                        <div className="flex-shrink-0" style={{maxHeight: '153px'}}>
+                                        <div className="flex-shrink-0">
                                             <picture>
                                                 {resource.post_thumbnail ? (<img width="1600" height="1067" src={resource.post_thumbnail} className="lg:rounded-lg lg:rounded-br-[60px] bg-cover wp-post-image" alt="" decoding="async" loading="lazy"  />) : (<div className="placeholder bg-purple-100 lg:rounded-br-[60px]" style={{"min-width" : "255px", "min-height" : "170px"}} />)}
                                             </picture>
@@ -183,15 +164,7 @@ const ResourceListing = (props) => {
                                         <div className="flex flex-1 flex-col justify-between bg-white">
                                             <div className="flex-1">
                                                 <a href="#" className="mt-2 block">
-                                                    <p className="text-xl font-semibold text-black max-h-20" style={{
-                                                            maxWidth: '100%',
-                                                            maxHeight: '85px',
-                                                            display: '-webkit-box',
-                                                            WebkitBoxOrient: 'vertical',
-                                                            WebkitLineClamp: 3,
-                                                            overflow: 'hidden',
-                                                            textOverflow: 'ellipsis',
-                                                    }}>{resource?.post_title?.replace(/<\/?[^>]+(>|$)/g, "")?.replace(/\&nbsp;/g, '')}</p>
+                                                    <p className="text-xl font-semibold text-black">{resource?.post_title?.replace(/<\/?[^>]+(>|$)/g, "")?.replace(/\&nbsp;/g, '')}</p>
                                                 </a>
                                             </div>
                                             <div className="mt-6 flex items-center">
@@ -238,13 +211,19 @@ const ResourceListing = (props) => {
                             </ul>
                         </div>) : <></>}
                     </div>
-                    <div class="resources-subscribe bg-blue-300 my-10 rounded">
-                        <div class="inner mx-auto max-w-7xl ">
-                            <h2 class="inline font-medium  text-white sm:block"> Subscribe to our blog</h2>
-                            <p class="inline  text-white sm:block">Get our latest posts in your email</p>
-                            <form id="mktoForm_1124"></form> 
+                    <div class="bg-blue-300 my-10 rounded">
+                        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                            <h2 class="inline text-3xl font-bold tracking-tight text-black sm:block sm:text-4xl"> Subscribe to our blog</h2>
+                            <p class="inline text-3xl font-bold tracking-tight text-indigo-600 sm:block sm:text-4xl">get our latest posts in your email</p>
+                            <form class="mt-8">
+                                <label for="email-address" class="sr-only">Enter your email</label>
+                                <input id="email-address" name="email" type="email" autocomplete="email" required class="w-full rounded-md border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:max-w-xs" placeholder="Enter your email" />
+                                <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                                    <button type="submit" class="flex w-full items-center justify-center rounded-full border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">subscribe</button>
+                                </div>
+                            </form>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
             {maxPages > 1 ? (<div className='c-mt-resourcepager'>
@@ -252,16 +231,14 @@ const ResourceListing = (props) => {
                     className="pagination-container flex flex-row mt-4 justify-center"
                 >
                     {/* Left navigation arrow */}
-                    <li
+                    {currentPage > 1 ? (<li
                         className='previous-button px-2 py-1 cursor-pointer rounded bg-gray-200 mr-2'
-                        style={{minWidth: '60px'}}
                         onClick={onPrevious}
                     >
-                        {/* <div className="arrow left" >
+                        <div className="arrow left" >
                             Back
-                        </div> */}
-                        {currentPage > 1 ? (<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>) : <></>}
-                    </li>
+                        </div>
+                    </li>) : <></>}
                     {paginationRange.map(pageNumber => {
 
 
@@ -281,14 +258,12 @@ const ResourceListing = (props) => {
                         );
                     })}
                     {/*  Right Navigation arrow */}
-                    <li
-                        className="next-button px-2 py-1 cursor-pointer bg-gray-200 mr-2 min-w-16"
+                    {currentPage < maxPages ? (<li
+                        className="next-button px-2 py-1 cursor-pointer bg-gray-200 mr-2"
                         onClick={onNext}
-                        style={{minWidth: '60px'}}
                     >
-                        {/* <div className="arrow right" >Next</div> */}
-                        {currentPage < maxPages ? (<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>) : <></>}
-                    </li>
+                        <div className="arrow right" >Next</div>
+                    </li>) : <></>}
                 </ul>
             </div>) : <></>}
         </>

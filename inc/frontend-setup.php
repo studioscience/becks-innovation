@@ -13,7 +13,7 @@ function base_scripts_and_styles()
     if (!is_admin()) {
 
         $register_js_url = mix('js/block-register.js');
-        $register_js_assets = include('wp-content/themes/as-software/assets/dist/js/block-register.asset.php');
+        $register_js_assets = include('wp-content/themes/becks/assets/dist/js/block-register.asset.php');
         // echo $register_js_url;
         // echo var_dump($register_js_assets);
         wp_enqueue_script('register-js',  $register_js_url, $register_js_assets['dependencies'], $register_js_assets['version']);

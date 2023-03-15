@@ -14,44 +14,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/wp-content/themes/as-software/assets/dist/css/style.css" rel="stylesheet">
+	<link href="/wp-content/themes/becks/assets/dist/css/style.css" rel="stylesheet">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/emj4isx.css">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKNJT6HTYW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RKNJT6HTYW');
-</script>
-
-<!-- Marketo -->
-<script type="text/javascript">
-(function() {
-  var didInit = false;
-  function initMunchkin() {
-    if(didInit === false) {
-      didInit = true;
-      Munchkin.init('074-NJA-430');
-    }
-  }
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = '//munchkin.marketo.net/munchkin.js';
-  s.onreadystatechange = function() {
-    if (this.readyState == 'complete' || this.readyState == 'loaded') {
-      initMunchkin();
-    }
-  };
-  s.onload = initMunchkin;
-  document.getElementsByTagName('head')[0].appendChild(s);
-})();
-</script>
 	<?php wp_head(); ?>
 </head>
 <script>

@@ -19,6 +19,7 @@ mix.setPublicPath( './assets/dist' );
 // Compile assets.
 mix.js( 'assets/src/scripts/app.js', 'assets/dist/js' )
 	.js( 'assets/src/scripts/admin.js', 'assets/dist/js' )
+	.js( 'assets/src/scripts/block-register.js', 'assets/dist/js')
 	.sass( 'assets/src/sass/gutenberg.scss', 'assets/dist/css' )
 	.block( 'assets/src/scripts/gutenberg.js', 'assets/dist/js' )
 	.postCss( 'assets/src/styles/style.css', 'assets/dist/css', [
