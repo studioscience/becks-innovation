@@ -1,0 +1,31 @@
+.hero-rte {
+  @media (max-width: 480px) {
+    padding-top: 10px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+
+    @media (max-width: 480px) {
+     font-size: 24px;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: white;
+
+    li {
+      font-size: 18px;
+      margin: 20px;
+      font-weight: 400;
+      line-height: 22.5px;
+
+      @media (max-width: 480px) {
+        font-size: 18px;
+       }
+    }
+  }
+}

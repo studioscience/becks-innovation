@@ -1,0 +1,261 @@
+.mktoForm {
+	visibility: visible;
+}
+.mktoForm[data-styles-ready="true"] {
+	visibility: visible;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  .mktoForm {
+    max-width: 500px;
+  }
+}
+
+.form-container-wide {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0 auto;
+  .mktoForm {
+    max-width: 700px;
+  }
+}
+
+.form-container-sub {
+  .mktoForm {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    max-width: 300px;
+    margin-top: 1rem;
+    .mktoFormRow {
+      input, textarea, select {
+        width: 70% !important;
+        border-radius: 8px 0 0 8px !important;
+        border-right: none !important;
+        height: 40px;
+      }
+      label {
+        display: none;
+      }
+      .mktoGutter {
+        display: none;
+      }
+    }
+    .mktoButtonRow {
+      width: 30%;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      .mktoButtonWrap {
+        button[type=submit] {
+          width: 100%;
+          border-radius: 0 9999px 9999px 0 !IMPORTANT;
+          margin-top: 0 !important;
+          padding: 0 !important;
+          height: 40px;
+          width: 100%;
+        }     
+      }
+    }
+  }
+}
+
+.sf-form {
+  input, select {
+    margin-bottom: 1rem;
+  }
+}
+
+.mktoForm,
+.sf-form {
+  flex-grow: 1;
+  font-family: niveau-grotesk, sans-serif;
+  background-color: #F9F5FE;
+  padding: 1rem 1.2rem 1.9rem 1.2rem;
+  border-radius: 12px;
+  .mktoOffset {
+    display: none;
+  }
+  #LblCity,
+  #LblStateCode,
+  #LblPostalCode {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+  }
+  input, textarea, select {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #D6D6D6;
+  }
+  button[type=submit] {
+    width: 100%;
+    color: #fff;
+    padding: 1rem !important;
+    background-image: linear-gradient(56.14deg, #873FE0 0%, #00C0DD 120.02%) !important;
+    font-weight: 500;
+    font-size: 1rem !important;
+    border: none !important;
+    border-radius: 9999px !IMPORTANT;
+    margin-top: 30px !important;
+  }
+  .mktoAsterix {
+    display: none !important;
+  }
+  .mktoFormRow {
+    //padding-bottom: 1rem;
+
+    .mktoFormCol {
+      width: 100%;
+      margin-bottom: 0 !important;
+      padding-bottom: 1rem;
+
+      .mktoFieldWrap {
+        width: 100%;
+        
+        .mktoLabel {
+          font-size: 1rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .mktoField {
+      margin-top: 0.25rem;
+      width: 100% !important;
+      border: 1px solid #D6D6D6;
+      border-radius: 12px;
+      font-size: 1rem;
+      box-shadow: none;
+      height: 48px;
+      padding-left: 15px;
+    }
+    
+  }
+  .mktoButtonRow {
+    width: 100%;
+    .mktoButtonWrap {
+      margin-left: 0 !important;
+      .mktoButton {
+        background-image: linear-gradient(56.14deg, #873FE0 0%, #00C0DD 120.02%) !important;
+        font-weight: 500;
+        font-size: 1rem !important;
+        border: none !important;
+        border-radius: 9999px !IMPORTANT;        
+      }
+    }
+  }
+}
+
+.resources-subscribe {
+  background: url('../../dist/images/BlogSubscription.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  h2 {
+    font-size: 22px !important;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .inner {
+    padding: 25px;
+  }
+  #mktoForm_1124 {
+    max-width: 100%;
+    background-color: transparent;
+    padding: 0;
+    .mktoFormCol {
+      padding-bottom: 0;
+      label {
+        display: none;
+      }
+    }
+    button {
+      background-color: #66D9EA;
+      color: #000000;
+      background-image: none !important;
+      margin-top: 20px !important;
+    }
+    
+  }
+}
+
+
+/* Formidable Forms */
+
+.job-form-container {
+    background: #F9F5FE;
+    padding: 0 20px;
+    border-radius: 12px;
+
+    h3 {
+      font-size: 24px !important;
+      margin-bottom: 20px !important;
+      color: #36195A;
+      margin-top: 20px;
+    }
+
+    .with_frm_style {
+      input[type=text], input[type=email], input[type=tel], select {
+        border: 1px solid #D6D6D6;
+        height: 48px;
+        border-radius: 12px;
+        box-shadow: none;
+    }
+    .frm_submit button {
+      background: linear-gradient(56.14deg, #873FE0 0%, #00C0DD 120.02%) !important;
+      font-weight: 500 !important;
+      border-radius: 9999px !important;
+      padding: 11px 12px !important;
+      width: 100% !important;
+      border: none !important;
+
+      &:hover {
+        border: none !important;
+        color: #ffffff !important;
+      }
+    }
+    .frm_dropzone.frm_single_upload {
+      max-width: 185px;
+      background: transparent;
+      text-align: center;
+    }
+    .frm_small_text, .frm_icon_font.frm_upload_icon {
+      display: none;
+    }
+    .frm_compact_text {
+      display: none;
+    }
+    .dz-message.needsclick {
+      position: relative;
+      border: none;
+      font-size: 16px;
+      background: transparent;
+      padding: 0;
+      height: 48px;
+      line-height: 48px;
+      color: rgb(135, 63, 224);
+      font-weight: 500;
+      &:before {
+        background: linear-gradient(45deg,#873fe0,#00c0dd);
+        border-radius: 999px;
+        content: "";
+        inset: 0;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        padding: 3px;
+        position: absolute;
+      }
+    }
+  }
+}

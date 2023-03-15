@@ -1,0 +1,236 @@
+@media screen and (max-width: 767px) {
+	main#content {
+		padding-top: 112px;
+	}
+}
+header#mobile-header {
+    z-index: 9999;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    /* custom non-Tailwind CSS */
+
+    @media (max-width: 576px) {
+        .content {
+            padding-top: 51px;
+        }
+    }
+
+    @media (min-width: 577px) {
+    .pt-scroll {
+        padding-top: 51px;
+    }
+
+    .nav-sticky {
+        position: fixed!important;
+        min-width: 100%;
+        top: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+        transition: all .25s ease-in;
+        z-index: 1;
+    }
+    }
+
+    /* HAMBURGER MENU */
+
+    .hamburger {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    transition: all 0.25s;
+    }
+
+    .hamburger__top-bun,
+    .hamburger__bottom-bun {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+    }
+
+    .hamburger:hover [class*="-bun"] {
+    background: #333;
+    }
+
+    .hamburger__top-bun {
+    transform: translateY(-5px);
+    }
+
+    .hamburger__bottom-bun {
+    transform: translateY(3px);
+    }
+
+    .open {
+    transform: rotate(90deg);
+    transform: translateY(-1px);
+    }
+
+    .open .hamburger__top-bun {
+    transform:
+        rotate(45deg)
+        translateY(0px);
+    }
+
+    .open .hamburger__bottom-bun {
+    transform:
+        rotate(-45deg)
+        translateY(0px);
+    }
+
+    /* Dropdown styling */
+    #site-menu {
+        #menu {
+            margin-top: 30px;
+            transition: .2s display ease;
+
+            .menu-mobile-menu-container {
+                margin-bottom: 30px;
+            }
+            #menu-mobile-menu {
+                .menu-item {
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 1.075rem;
+                    }
+                }
+                .menu-item-has-children {
+                    a {
+                        display: block;
+                        width: 100%;
+                        position: relative;
+                        &.sub-link.closed-link {
+                            &:after {
+                                content: '';
+                                background: url('/wp-content/themes/as-software/assets/dist/images/chevron-down.svg');
+                                background-size: 15px;
+                                width: 15px;
+                                height: 9px;
+                                display: inline-block;
+                                margin-left: 10px;
+                                margin-bottom: 2px;
+                                position: absolute;
+                                right: 0;
+                                top: 10px;
+                            }
+                        }
+                        &:after {
+                            content: '';
+                            background: url('/wp-content/themes/as-software/assets/dist/images/chevron-up.svg');
+                            background-size: 15px;
+                            width: 15px;
+                            height: 9px;
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 2px;
+                            position: absolute;
+                            right: 0;
+                            top: 10px;
+                        }
+                    }
+
+                    .sub-menu {
+                        //display: none;
+                        padding-left: 20px;
+                        padding-top: 10px;
+                        .menu-item {
+                            a {
+                                &:after {
+                                    content: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+header#masthead {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    height: 96px;
+    display: flex;
+    align-items: center;
+
+    .menu-header-menu-container {
+        padding: 0 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .header-menu {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            
+            .menu-item {
+                padding: 4px 1rem 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &.menu-item-has-children {
+                    a {
+                        &:after {
+                            content: '';
+                            background: url('/wp-content/themes/as-software/assets/dist/images/chevron-down.svg');
+                            background-size: 10px;
+                            width: 10px;
+                            height: 6px;
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 2px;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            color: #873FE0;
+                            &:after {
+                                background: url('/wp-content/themes/as-software/assets/dist/images/chevron-up.svg');
+                            }
+                        }
+                    }
+                }
+            }
+            .sub-menu {
+                top: 6rem;
+                width: auto;
+                
+                .menu-item {
+                    border-bottom: none;
+                    &:hover {
+                        border-bottom: none;
+                        a {
+                            color: #873FE0 !important;
+                            &:before {
+                                margin-left: 5px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    a {
+                        color: #36195A !important;
+                        transition: .2s ease color;
+                        white-space: nowrap;
+                        &:after {
+                            content: none !important;
+                        }
+                        &:before {
+                            content: '';
+                            background: url('/wp-content/themes/as-software/assets/dist/images/arrow-right.svg');
+                            background-size: 18px;
+                            width: 18px;
+                            height: 13px;
+                            margin-right: 10px;
+                            display: inline-block;
+                            transition: .2s ease margin;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

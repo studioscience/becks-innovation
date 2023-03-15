@@ -1,0 +1,19 @@
+.border-top-lightpurple {
+  border-top: 2px solid #F3ECFC;
+}
+.border-purple-grad {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    padding: 3px;
+    background:linear-gradient(45deg,#873FE0,#00C0DD);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+  }
+}

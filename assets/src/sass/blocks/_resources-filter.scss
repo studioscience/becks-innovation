@@ -1,0 +1,33 @@
+.pagination-container {
+    .slick-next {
+        bottom: 0;
+        right: 0 !important;
+        top: auto;
+        width: auto;
+        &:before {
+            content: '';
+            background: url('../images/testimonial-arrow-right.svg');
+            background-size: 58px;
+            width: 60px;
+            height: 22px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+    .slick-prev {
+        bottom: 0;
+        right: 75px !important;
+        top: auto;
+        width: auto;
+        left: auto;
+        &:before {
+            content: '';
+            background: url('../images/testimonial-arrow-left.svg');
+            background-size: 58px;
+            width: 60px;
+            height: 22px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+}

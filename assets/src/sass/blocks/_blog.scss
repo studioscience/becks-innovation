@@ -1,0 +1,127 @@
+// **
+//  * Rich text editor text
+//  */
+:root {
+  --font-size: 1.125rem; /* 18px */
+  --ratio: 1.333;
+
+  /* Calculate values */
+  --h4: calc(var(--font-size) * var(--ratio));
+  --h3: calc(var(--h4) * var(--ratio));
+  --h2: calc(var(--h3) * var(--ratio));
+  --h1: calc(var(--h2) * var(--ratio));
+}
+
+p {
+  font-size: var(--font-size);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+.chevron-link {
+  color: rgb(135, 63, 224);
+  font-weight: 500;
+
+  &:before {
+    content: '';
+    background: url('/wp-content/themes/as-software/assets/dist/images/chevron-left.svg');
+    background-size: 8px;
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}
+}
+
+u-overlay img {
+  filter: sepia(100%) saturate(300%) brightness(90%) hue-rotate(165deg);
+}
+
+.o-rte-text {
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    filter: none;
+    border-radius: 8px;
+  }
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    color: black;
+  }
+
+  h2:empty,
+  h3:empty,
+  p:empty {
+    display: none;
+  }
+
+
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(135, 63, 224, 1);
+    font-weight: 700;
+    letter-spacing: 12%;
+  }
+  // Heading + subheading lockup
+ 
+  a {
+    color: blue;
+    padding-bottom: 3px;
+    margin-bottom: -3px;
+    position: relative;
+    text-decoration: none;
+    background-size: 0% 2px;
+    transition: all 0.5s;
+
+    &:hover {
+      color: blue;
+      background-size: 200% 2px;
+    }
+  }
+
+  code,
+  pre {
+    font-size: 125%;
+  }
+
+  ol,
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-left: 16px;
+      margin-bottom: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}

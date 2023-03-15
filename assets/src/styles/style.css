@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '/assets/dist/css/gutenberg.css';
+
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.cta-gradient {
+  background: linear-gradient(94.49deg, #1D476F 0%, #36195A 100%);
+}
+
+.button-gradient {
+  background: linear-gradient(56.14deg, #873FE0 0%, #00C0DD 120.02%);
+}
+
+tab-gradient {
+  background: linear-gradient(94.49deg, rgba(209, 228, 255, 0.5) 0%, rgba(230, 216, 248, 0.5) 100%);
+}
+
+.selected-page {
+  background-color: "white";
+  border: solid 1px #873FE0;
+  color: #873FE0;
+  font-weight: 500;
+}
+
+.unselected-page {
+  background-color: #F3F3F3;
+  color: "black";
+  border: solid 1px #FFFFFF;
+  font-weight: 500;
+}
+
+.bg-purple-100 {
+  background-color: #f9f5fe;
+}
