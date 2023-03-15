@@ -17,6 +17,9 @@
 	<link href="/wp-content/themes/becks/assets/dist/css/style.css" rel="stylesheet">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/emj4isx.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
