@@ -30,6 +30,17 @@
 
       acf_register_block_type ( 
         array(
+          'name' => 'about-us',
+          'title' => 'About Us',
+          'description' => 'repeater section with cards' ,
+          'render_template' => 'template-parts/blocks/about-us.php',
+          'icon' => '',
+          'keywords' => array('about', 'card'),
+        )
+      );
+
+      acf_register_block_type ( 
+        array(
           'name' => 'proof-card',
           'title' => 'Proof Card',
           'description' => 'testimonial on card.',
