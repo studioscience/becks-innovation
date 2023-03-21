@@ -9,51 +9,60 @@
   }
 ?>
 
-<div class="md:max-w-7xl md:mx-auto px-4 py-10 md:py-20" id="tabs-container">
+<div class="bg-beige overflow-hidden" id="tabs-container">
   <div class="mb-10 text-center">
-    <h1 class="lg:text-[42px] text-galaxy"><?php echo get_field('header') ?></h1>
-    <ul class="flex flex-wrap justify-center pt-[120px] -mb-px text-sm font-medium gap-20" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+    <h1 class="text-2xl py-10 md:pt-20 px-6 max-w-xs mx-auto md:max-w-none lg:text-[42px] text-black"><?php echo get_field('header') ?></h1>
+    <ul class="flex flex-row overflow-x-scroll max-w-sm mx-auto justify-center md:pt-[20px] -mb-px text-sm font-medium gap-8" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
         <li class="mr-2" role="presentation">
-          <button class="uppercase letter-spacing-lg inline-block pb-4 rounded-t-lg text-xl border-b-4 text-brand-purple hover:text-black dark:text-black dark:hover:text-brand-purple border-brand-purple dark:border-brand-purple" id="first-tab" data-tabs-target="#<?php echo get_field('list_item') ?>" type="button" role="tab" aria-controls="profile" aria-selected="true"><?php echo get_field('list_item') ?></button>
+          <button class="inline-block rounded-t-lg text-base border-b-2 text-green hover:text-black dark:text-black dark:hover:text-brand-purple border-green dark:border-brand-purple" id="first-tab" data-tabs-target="#<?php echo get_field('list_item') ?>" type="button" role="tab" aria-controls="profile" aria-selected="true"><?php echo get_field('list_item') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="uppercase letter-spacing-lg inline-block pb-4 rounded-t-lg text-xl border-b-4 text-brand-purple hover:text-black dark:text-black dark:hover:text-brand-purple border-brand-purple dark:border-brand-purple" id="second-tab" data-tabs-target="#<?php echo get_field('list_item_2') ?>" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><?php echo get_field('list_item_2') ?></button>
+            <button class="inline-block rounded-t-lg text-base hover:text-black dark:text-black border-green dark:border-brand-purple" id="second-tab" data-tabs-target="#<?php echo get_field('list_item_2') ?>" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><?php echo get_field('list_item_2') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="uppercase letter-spacing-lg inline-block pb-4 rounded-t-lg text-xl border-b-4 text-brand-purple hover:text-black dark:text-black dark:hover:text-brand-purple border-brand-purple dark:border-brand-purple" id="third-tab" data-tabs-target="#<?php echo get_field('list_item_3') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_3') ?></button>
+            <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="third-tab" data-tabs-target="#<?php echo get_field('list_item_3') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_3') ?></button>
         </li>
     </ul>
   </div>
-  <div id="myTabContent" class="md:max-w-7xl md:mx-auto">
-      <div class="bg-gray-50 rounded-xl dark:bg-purple-100 md:flex overflow-hidden" id="tab-1" role="tabpanel" aria-labelledby="<?php echo get_field('list_item') ?>-tab">
-        <div class="image-wrap">
-          <img class="rounded-br-[140px]" src="<?php echo esc_url(get_field('card_image')) ?>" alt="">
-        </div>  
-        <div class="content md:max-w-2xl md:mx-auto md:px-24 my-auto p-6">
-          <h3 class="uppercase text-base font-bold letter-spacing-lg text-brand-purple"><?php echo get_field('eyebrow') ?></h3>
-          <h2 class="text-4xl font-medium py-5"><?php echo get_field('heading') ?></h2>
-          <p class="text-base font-small text-black dark:text-black"><?php echo get_field('body') ?></p>
-        </div>  
+  <div id="myTabContent" class="bg-white max-h-[876px]">
+    <div class="relative bg-gray-50 md:flex overflow-hidden" id="tab-1" role="tabpanel" aria-labelledby="<?php echo get_field('list_item') ?>-tab">
+      <div class="image-wrap md:w-7/12">
+        <img class="w-full" src="<?php echo esc_url(get_field('card_image')) ?>" alt="">
+      </div>  
+      <div class="content md:max-w-2xl max-w-xs mx-auto lg:mx-0 lg:my-auto md:px-24 py-10 md:w-5/12">
+        <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow') ?></h3>
+        <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading') ?></h2>
+        <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body') ?></p>
+        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
+        </svg></button>
       </div>
-      <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="tab-2" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_2') ?>-tab"><div class="image-wrap">
-          <img class="rounded-br-[140px]" src="<?php echo esc_url(get_field('card_image_2')) ?>" alt="">
-        </div>  
-        <div class="content md:max-w-2xl md:mx-auto md:px-24 my-auto">
-          <h3 class="uppercase text-base font-bold letter-spacing-lg text-brand-purple"><?php echo get_field('eyebrow_2') ?></h3>
-          <h2 class="text-4xl font-medium py-5"><?php echo get_field('heading_2') ?></h2>
-          <p class="text-base font-small text-black dark:text-black"><?php echo get_field('body_2') ?></p>
-        </div>  
-      </div>
-      <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="tab-3" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_3') ?>-tab">
-        <div class="image-wrap">
-          <img class="rounded-br-[140px]" src="<?php echo esc_url(get_field('card_image_3')) ?>" alt="">
-        </div>  
-        <div class="content md:max-w-2xl md:mx-auto md:px-24 my-auto">
-          <h3 class="uppercase text-base font-bold letter-spacing-lg text-brand-purple"><?php echo get_field('eyebrow_3') ?></h3>
-          <h2 class="text-4xl font-medium py-5"><?php echo get_field('heading_3') ?></h2>
-          <p class="text-base font-small text-black dark:text-black"><?php echo get_field('body_3') ?></p>
-        </div>  
-      </div>
+    </div>
+    <div class="hidden relative p-4 bg-gray-50" id="tab-2" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_2') ?>-tab"><div class="image-wrap md:w-7/12">
+        <img class="w-full" src="<?php echo esc_url(get_field('card_image_2')) ?>" alt="">
+      </div>  
+      <div class="content md:max-w-2xl max-w-xs mx-auto lg:mx-0 lg:my-auto md:px-24 py-10 md:w-5/12">
+        <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_2') ?></h3>
+        <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_2') ?></h2>
+        <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_2') ?></p>
+        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
+        </svg></button>
+      </div>  
+    </div>
+    <div class="hidden relative p-4 bg-gray-50" id="tab-3" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_3') ?>-tab">
+      <div class="image-wrap md:w-7/12">
+        <img class="w-full" src="<?php echo esc_url(get_field('card_image_3')) ?>" alt="">
+      </div>  
+      <div class="content md:max-w-2xl max-w-xs mx-auto lg:mx-0 lg:my-auto md:px-24 py-10 md:w-5/12">
+        <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_3') ?></h3>
+        <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_3') ?></h2>
+        <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_3') ?></p>
+        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
+        </svg></button>
+      </div>  
+    </div>
   </div>
 </div>
 

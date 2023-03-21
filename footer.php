@@ -66,7 +66,7 @@
 				<?php
 					$curYear = date('Y');
 						echo '&copy' . $curYear;
-				?> AS Software Inc. All Rights Reserved
+				?> Becks Innovation Inc. All Rights Reserved
 			</div>
 		</div>
 	</footer>
