@@ -48,16 +48,19 @@ function navToggle() {
 			$(this).toggleClass('closed-link');
 		});
 	});
+
+	var t = $('#split-content').offset().top - 100;
+	var t1 = $('')
 </script>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header id="mobile-header" class="lg:hidden w-full flex flex-col fixed md:relative bg-white pin-t pin-r pin-l">
+<!-- <header id="mobile-header" class="header lg:hidden w-full flex flex-col fixed md:relative bg-transparent pin-t pin-r pin-l">
 		<div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center">
 			<nav id="site-menu" class="flex flex-col md:flex-row w-full justify-between items-center px-4 md:px-6 py-1 bg-white shadow md:shadow-none pt-8 pb-8">
 				<div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center">
 					<h1 class="logo mr-auto cursor-pointer">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<picture class="w-12 h-12 "><?php include 'assets/dist/svg/Logo-mobile.svg'; ?></picture>	
+						<picture class="w-12 h-12 "><?php include 'assets/dist/svg/Logo.svg'; ?></picture>	
 						</a>
 					</h1>
 					<button id="menuBtn" class="hamburger block md:hidden focus:outline-none" type="button" onclick="navToggle();">
@@ -76,18 +79,13 @@ function navToggle() {
 			</nav>
 			
 		</div>
-	</header>
-	<header id="masthead" class="bg-white px-4 lg:flex lg:justify-end lg:items-center lg:gap-8" role="banner">
+	</header> -->
+	<header id="masthead" class="header bg-transparent fixed top-0 z-10 shadow-md w-full px-10 lg:flex lg:justify-end lg:items-center lg:gap-8" role="banner">
 		<h1 class="logo mr-auto cursor-pointer">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			 <picture class="w-12 h-12 "><?php include 'assets/dist/svg/Logo.svg'; ?></picture>	
 			</a>
 		</h1>
-
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu',
-		'menu_class'  => 'header-menu',
-		 ) ); ?>
-
 		<div class="header-cta">
 			<button type="button" class="menu-button bg-yellow inline-flex items-center rounded-full border border-transparent px-4 py-3 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><a href="<?php echo get_permalink(243); ?>" class="href">Let's Talk</a></button>
 		</div>

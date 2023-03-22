@@ -9,7 +9,7 @@
   }
 ?>
 
-<div class="c-split-content bg-contain bg-repeat-y bg-left relative <?php echo esc_attr($className); ?> bg-beige" id="" style="background-image: url(/wp-content/themes/becks/assets/dist/images/trax.png)">
+<div class="c-split-content bg-contain bg-repeat-y bg-left relative <?php echo esc_attr($className); ?> bg-beige" id="split-content" style="background-image: url(/wp-content/themes/becks/assets/dist/images/trax.png)">
   <div class="lg:text-center text-left py-6  px-4 lg:px-0 max-w-6xl mx-auto lg:pt-20 lg:pb-0">
     <h2 class="text-5xl leading-relaxed  font-medium text-black"><?php echo get_field('title'); ?></h2>
     <?php if(get_field('split_content_sub_header') ) : ?>
