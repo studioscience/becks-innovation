@@ -29,7 +29,12 @@ module.exports = {
       '4xl': '2.441rem',
       '5xl': '3.052rem',
     },
-    extend: {},
+    extend: {
+      backdropBrightness: {
+        25: '.25',
+        175: '1.75',
+      }
+    },
   },
   content: [
     './assests/src/scripts/**/*.js',

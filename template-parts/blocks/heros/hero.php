@@ -46,10 +46,10 @@ if(empty($link)) {
 ?>
 
 <div 
-  class="hero <?php echo implode(" ", $hero_classes); ?> px-4" 
+  class="hero <?php echo implode(" ", $hero_classes); ?> md:px-0" 
   id="<?php echo $id; ?>"
   style="<?php echo $background_style; ?>">
-    <div>
+    <div class="text-center w-full h-full flex  justify-center items-center backdrop-brightness-50 md:backdrop-brightness-75">
       <?php if ($text_align_class == "right:Right") : ?>
         <div class="md:max-w-7xl mx-auto">
             <div class="md:flex md:flex-row flex-col">
@@ -104,9 +104,9 @@ if(empty($link)) {
           </div>
         <?php else : ?>
           <div class="text-center">
-            <div class="hero-content md:max-w-xl mx-auto lg:py-60">
+            <div class="hero-content md:max-w-2xl mx-auto lg:py-60">
               <h3 class="uppercase text-base font-bold letter-spacing-lg text-brand-purple"><?php echo get_field('eyebrow'); ?></h3>
-              <h2 class="heading mt-7 text-5xl font-medium leading-10 text-galaxy sm:text-5xl"><?php the_field('heading'); ?></h2>
+              <h1 class="px-4 py-24 heading mt-7 text-3xl font-medium leading-20 text-white md:text-5xl"><?php the_field('heading'); ?></h1>
               <?php if(!empty($body) ) : ?>
                 <div class="mt-7 text-lg text-black"><?php the_field('body'); ?></div>
               <?php endif ?> 
