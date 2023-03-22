@@ -69,7 +69,7 @@ function navToggle() {
 						'menu_class'  => 'mobile-menu',
 					) ); ?>
 					<div class="header-cta">
-						<button type="button" class="menu-button button-gradient inline-flex items-center justify-center rounded-full button-gradient px-5 py-3 my-4 text-base font-medium text-white hover:bg-hero-gradient"><a href="<?php echo get_permalink(243); ?>" class="href">Get a Demo</a></button>
+						<button type="button" class="menu-button bg-yellow inline-flex items-center justify-center rounded-full px-5 py-3 my-4 text-base font-medium text-black hover:bg-hero-gradient"><a href="<?php echo get_permalink(243); ?>" class="href">let's talk</a></button>
 					</div>
 				</div>
 				
@@ -89,7 +89,7 @@ function navToggle() {
 		 ) ); ?>
 
 		<div class="header-cta">
-			<button type="button" class="menu-button button-gradient inline-flex items-center rounded-full border border-transparent px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><a href="<?php echo get_permalink(243); ?>" class="href">Get a Demo</a></button>
+			<button type="button" class="menu-button bg-yellow inline-flex items-center rounded-full border border-transparent px-4 py-3 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><a href="<?php echo get_permalink(243); ?>" class="href">Let's Talk</a></button>
 		</div>
 		
 	</header><!-- #masthead -->
