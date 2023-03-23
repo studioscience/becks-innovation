@@ -6,6 +6,7 @@ module.exports = {
 			template: "#F9F8F3",
 			transparent: "transparent",
 			green: "#00693F",
+      darkgreen: "#012e1c",
       yellow:"#FFDB00",
       black:"#000000",
       white:"#ffffff",

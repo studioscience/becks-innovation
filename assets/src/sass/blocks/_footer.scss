@@ -45,14 +45,7 @@
   }
 
   &-cta {
-    .hidden_1 {
-      opacity: 0;
-      transition: all 1s;
-    }
-
-    .show {
-      opacity: 1;
-    }
+    background: linear-gradient(180deg, rgba(0, 105, 63, 0) 33.86%, #002E1B 100%);
   }
 }
 

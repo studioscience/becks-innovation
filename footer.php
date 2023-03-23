@@ -28,41 +28,16 @@
   }
   ```
 -->
-	<footer aria-labelledby="footer-heading">
-		
-		<div class="bg-white px-4 py-10 lg:flex lg:justify-end lg:my-[96px] lg:px-[160px] lg:gap-8">
-			<div class="footer-intro lg:mr-auto">
-				<h1 class="logo cursor-pointer">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<picture class="w-12 h-12 "><?php include 'assets/dist/svg/Logo.svg'; ?></picture>	
-					</a>
-				</h1>
-				<div class="max-w-m ">
-					
-					<ul class="socials flex">
+	<footer aria-labelledby="footer-heading" class="">
+		<div class="bg-darkgreen px-28 py-10 md:px-4 lg:px-[160px] lg:gap-8">
+			<div class="footer-intro max-w-xs p md:max-w-lg mx-auto">
+				<div class="max-w-lg mx-auto">
+					<ul class="socials flex items-center justify-center">
 						<li class="vimeo"><a href="https://vimeo.com/user184258780" target="_blank"><?php include 'assets/dist/svg/vimeo.svg' ?></a></li>  
 						<li class="linkedIn"><a href="https://www.linkedin.com/company/as-software-inc./" target="_blank"><?php include 'assets/dist/svg/LinkedIn-Icon.svg' ?></a></li>
 					</ul>
 				</div>
-			</div>
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu',
-					'menu_class' => 'footer',
-				) ); ?>
-			<div class="mt-4 xl:mt-0">
-				<h3 class="text-base font-bold text-black">Subscribe to our newsletter</h3>
-				<p class="mt-4 text-base text-black">Get our latest posts in your email</p>
-				<div class="form-container-sub">
-					<script src="//go.as-software.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1066"></form> <script>MktoForms2.loadForm("//go.as-software.com", "074-NJA-430", 1066);</script>
-				</div>
-			</div>
-		</div>
-		<div class="subfooter px-4 py-10 lg:flex lg:justify-between lg:px-[160px]">
-			<div class="auxillary">
-				<?php wp_nav_menu( array( 'theme_location' => 'auxiliary-menu',
-				'menu_class' => 'aux-menu',
-				) ); ?>
-			</div>
-			<div class="copyright">
+			<div class="copyright pt-6 text-white text-center">
 				<?php
 					$curYear = date('Y');
 						echo '&copy' . $curYear;

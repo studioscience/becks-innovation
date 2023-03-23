@@ -289,7 +289,7 @@
         array(
           'name' => 'footer-cta',
           'title' => 'Footer Cta',
-          'description' => 'full width cta with lottie animation',
+          'description' => 'full width cta with background image',
           'render_template' => 'template-parts/blocks/footer-cta.php',
           'icon' => '',
           'keywords' => array('footer', 'cta'),
