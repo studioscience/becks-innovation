@@ -296,16 +296,16 @@
         )
       );
 
-       // acf_register_block_type ( 
-      //   array(
-      //     'name' => 'stat-row',
-      //     'title' => 'Stat Row',
-      //     'description' => 'A row displaying 3 stats and descriptions',
-      //     'render_template' => 'template-parts/blocks/stat-row.php',
-      //     'icon' => '',
-      //     'keywords' => array('statistic', 'row'),
-      //   )
-      // );
+       acf_register_block_type ( 
+        array(
+          'name' => 'partnership-process',
+          'title' => 'Partnership Process',
+          'description' => 'A module with heading, blurb and interactive image',
+          'render_template' => 'template-parts/blocks/partnership.php',
+          'icon' => '',
+          'keywords' => array('partnership', 'row'),
+        )
+      );
 
       // acf_register_block_type ( 
       //   array(
