@@ -10,7 +10,7 @@
 ?>
 
 <div class="c-split-content relative <?php echo esc_attr($className); ?> bg-beige" id="split-content">
-  <div class="text-center text-left py-6 px-4 lg:px-0 max-w-6xl mx-auto lg:pt-20 lg:pb-0">
+  <div class="text-center py-6 px-4 lg:px-0 max-w-6xl mx-auto lg:pt-20 lg:pb-0">
     <h2 class="md:text-5xl text-3xl leading-relaxed  font-medium text-black"><?php echo get_field('title'); ?></h2>
     <?php if(get_field('split_content_sub_header') ) : ?>
       <h3 class="pt-5 pb-10"><?php echo get_field('split_content_sub_header') ?></h3>
