@@ -106,7 +106,7 @@ if(empty($link)) {
           <div class="text-center">
             <div class="hero-content md:max-w-2xl mx-auto lg:py-60">
               <h3 class="uppercase text-base font-bold letter-spacing-lg text-brand-purple"><?php echo get_field('eyebrow'); ?></h3>
-              <h1 class="px-4 py-24 heading mt-7 text-3xl font-medium leading-20 text-white md:text-5xl"><?php the_field('heading'); ?></h1>
+              <h1 class="px-4 py-24 heading mt-7 text-3xl font-medium leading-20 !text-white md:text-5xl"><?php the_field('heading'); ?></h1>
               <?php if(!empty($body) ) : ?>
                 <div class="mt-7 text-lg text-black"><?php the_field('body'); ?></div>
               <?php endif ?> 
