@@ -87,7 +87,7 @@ function navToggle() {
 			</a>
 		</h1>
 		<div class="header-cta">
-			<button type="button" class="menu-button bg-yellow inline-flex items-center rounded-full border border-transparent px-4 py-3 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><a href="<?php echo get_permalink(243); ?>" class="href">Let's Talk</a></button>
+			<button type="button" id="open-modal" class="menu-button bg-yellow inline-flex items-center rounded-full border border-transparent px-4 py-3 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's Talk</button>
 		</div>
 		
 	</header><!-- #masthead -->
