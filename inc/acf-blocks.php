@@ -307,16 +307,16 @@
         )
       );
 
-      // acf_register_block_type ( 
-      //   array(
-      //     'name' => 'stat-row',
-      //     'title' => 'Stat Row',
-      //     'description' => 'A row displaying 3 stats and descriptions',
-      //     'render_template' => 'template-parts/blocks/stat-row.php',
-      //     'icon' => '',
-      //     'keywords' => array('statistic', 'row'),
-      //   )
-      // );
+      acf_register_block_type ( 
+        array(
+          'name' => 'schedule-call',
+          'title' => 'Schedule Call',
+          'description' => 'header, cards and calendly embed',
+          'render_template' => 'template-parts/blocks/schedule.php',
+          'icon' => '',
+          'keywords' => array('schedule', 'row'),
+        )
+      );
 
       acf_register_block_type ( 
         array(
