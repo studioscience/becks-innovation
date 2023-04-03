@@ -47,7 +47,7 @@ if(empty($link)) {
 
 <div 
   class="hero <?php echo implode(" ", $hero_classes); ?> md:px-0" 
-  id="<?php echo $id; ?>"
+  id="hero"
   style="<?php echo $background_style; ?>">
     <div class="text-center w-full h-full flex  justify-center items-center backdrop-brightness-50 md:backdrop-brightness-75">
       <?php if ($text_align_class == "right:Right") : ?>
