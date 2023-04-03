@@ -35,7 +35,10 @@ module.exports = {
       backdropBrightness: {
         25: '.25',
         175: '1.75',
-      }
+      },
+      scale: {
+        '-100': '-1',
+      },
     },
   },
   content: [
