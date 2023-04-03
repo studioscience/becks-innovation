@@ -10,7 +10,7 @@
 ?>
 
 <div class="about-us bg-black relative <?php echo esc_attr($className); ?>" id="about-us">
-  <div class="px-8 py-20  relative z-10">
+  <div class="px-8  relative z-10">
     <div class="lg:text-center text-center md:text-left lg:pb-10 lg:px-0 max-w-5xl mx-auto py-14 lg:pt-20">
       <h2 class="md:text-5xl text-3xl leading-normal font-medium text-white"><?php echo get_field('title'); ?></h2>
       <?php if(get_field('split_content_sub_header') ) : ?>
@@ -57,6 +57,6 @@
     </div>
   </div>
   <img class="absolute top-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-  <img class="absolute bottom-0 z-0" src="wp-content/themes/becks/assets/dist/images/horz-trax.png" alt="">
+  <img class="absolute bottom-0 -left-1 z-0" src="wp-content/themes/becks/assets/dist/images/horz-trax.png" alt="">
 </div>
 
