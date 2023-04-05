@@ -39,9 +39,9 @@
         <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow') ?></h3>
         <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading') ?></h2>
         <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body') ?></p>
-        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
-        </svg></button>
+        </svg></button> -->
       </div>
     </div>
     <div class="hidden relative p-4 bg-gray-50" id="tab-2" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_2') ?>-tab"><div class="image-wrap md:w-7/12">
@@ -51,9 +51,9 @@
         <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_2') ?></h3>
         <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_2') ?></h2>
         <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_2') ?></p>
-        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
-        </svg></button>
+        </svg></button> -->
       </div>  
     </div>
     <div class="hidden relative p-4 bg-gray-50" id="tab-3" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_3') ?>-tab">
@@ -64,9 +64,9 @@
         <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_3') ?></h3>
         <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_3') ?></h2>
         <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_3') ?></p>
-        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
-        </svg></button>
+        </svg></button> -->
       </div>  
     </div>
     <div class="hidden relative p-4 bg-gray-50" id="tab-4" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_4') ?>-tab">
@@ -77,9 +77,9 @@
         <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_4') ?></h3>
         <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_4') ?></h2>
         <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_4') ?></p>
-        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
-        </svg></button>
+        </svg></button> -->
       </div>  
     </div>
     <div class="hidden relative p-4 bg-gray-50" id="tab-5" role="tabpanel" aria-labelledby="<?php echo get_field('list_item_5') ?>-tab">
@@ -90,9 +90,9 @@
         <h3 class="uppercase text-xs font-semibold text-green"><?php echo get_field('eyebrow_5') ?></h3>
         <h2 class="text-xl md:text-2xl font-semibold py-2"><?php echo get_field('heading_5') ?></h2>
         <p class="text-sm md:text-xl font-normal text-black dark:text-black"><?php echo get_field('body_5') ?></p>
-        <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <button id="arrow" type="button" role="next"><svg class="absolute bottom-40 right-40 " width="25" height="9" viewBox="0 0 25 9" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.88 8.96703L9.18 8.42703L11.38 5.04703L4.54 5.46703L0.0399999 5.46703L0.04 3.74703L4.54 3.74703L11.38 4.16703L9.18 0.78703L9.88 0.247031L14.24 4.60703L9.88 8.96703Z" fill="#00693F"/>
-        </svg></button>
+        </svg></button> -->
       </div>  
     </div>
   </div>
