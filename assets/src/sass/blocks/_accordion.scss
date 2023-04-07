@@ -1,0 +1,38 @@
+.c-accordion {
+
+  &__heading {
+    position: relative;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      transition: transform 0.23s ease;
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  .is-opened {
+    .c-accordion__heading {
+      &::after {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+
+  &__body {
+    display: none;
+    line-height: 1.5;
+    max-width: 750px;
+  }
+}
