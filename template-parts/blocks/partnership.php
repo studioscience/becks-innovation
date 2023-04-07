@@ -9,7 +9,7 @@
   }
 ?>
 
-<div class="bg-contain bg-repeat-y bg-right relative <?php echo esc_attr($className); ?>" id="partnership" style="background-image: url(/wp-content/themes/becks/assets/dist/images/trax.png)">
+<div class="bg-contain bg-repeat-y bg-right relative <?php echo esc_attr($className); ?>" id="partnership">
   <div class="lg:text-center text-left py-6 px-4 lg:px-0 max-w-4xl mx-auto lg:pt-20 lg:pb-0">
     <h2 class="text-5xl leading-relaxed  font-medium text-black"><?php echo get_field('heading'); ?></h2>
     <div class="mt-1 mx-auto max-w-2xl">
@@ -66,5 +66,7 @@
       </div>
     </div>
   </div>
+  <img class="hidden md:inline-block absolute top-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
+  <img class="hidden md:inline-block absolute bottom-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
 </div>
 

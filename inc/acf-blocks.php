@@ -276,12 +276,12 @@
 
        acf_register_block_type ( 
         array(
-          'name' => 'demo-hero',
-          'title' => 'Demo Hero',
-          'description' => 'The hero for Demo page',
-          'render_template' => 'template-parts/blocks/heros/demo-hero.php',
+          'name' => 'faq-accordion',
+          'title' => 'FAQ Accordion',
+          'description' => 'accordion',
+          'render_template' => 'template-parts/blocks/accordion.php',
           'icon' => '',
-          'keywords' => array('demo-page', 'row'),
+          'keywords' => array('accordion', 'row'),
         )
       );
 

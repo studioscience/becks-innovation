@@ -53,11 +53,13 @@
 window.addEventListener("scroll", function() {
 	var header = document.getElementById("masthead");
   var elementTarget = document.getElementById("break-trigger");
-  if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-		header.classList.add("header-trigger").remove("header-bg-clean");
-  } else if (window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-		header.classList.remove("header-trigger").add("header-bg-clean");
-  }
+	if (header != undefined && header.classList != undefined) {
+		if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+		header?.classList?.add("header-trigger").remove("header-bg-clean");
+		} else if (window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+			header?.classList?.remove("header-trigger").add("header-bg-clean");
+		}
+	}
 });
 </script>
 <body <?php body_class(); ?>>
