@@ -12,7 +12,7 @@
 <div class="bg-beige overflow-hidden" id="tabs-container">
   <div class="mb-10 text-center">
     <h1 class="text-2xl py-10 md:pt-20 px-6 max-w-xs mx-auto md:max-w-none lg:text-[42px] text-black"><?php echo get_field('header') ?></h1>
-    <ul class="flex flex-row overflow-x-scroll max-w-sm lg:max-w-full mx-auto justify-center md:pt-[20px] -mb-px text-sm font-medium gap-8" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+    <ul class="flex flex-row overflow-x-scroll scrollbar-hide max-w-sm lg:max-w-full mx-auto justify-center md:pt-[20px] -mb-px text-sm font-medium gap-8" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
         <li class="mr-2" role="presentation">
           <button class="inline-block rounded-t-lg text-base border-b-2 text-green hover:text-black dark:text-black dark:hover:text-brand-purple border-green dark:border-brand-purple" id="first-tab" data-tabs-target="#<?php echo get_field('list_item') ?>" type="button" role="tab" aria-controls="profile" aria-selected="true"><?php echo get_field('list_item') ?></button>
         </li>
@@ -23,7 +23,7 @@
             <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="third-tab" data-tabs-target="#<?php echo get_field('list_item_3') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_3') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="fourth-tab" data-tabs-target="#<?php echo get_field('list_item_4') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_4') ?></button>
+            <button class="inline-block whitespace-nowrap rounded-t-lg text-base hover:text-black border-green dark:text-black" id="fourth-tab" data-tabs-target="#<?php echo get_field('list_item_4') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_4') ?></button>
         </li>
         <li class="mr-2" role="presentation">
             <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="fifth-tab" data-tabs-target="#<?php echo get_field('list_item_5') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_5') ?></button>
