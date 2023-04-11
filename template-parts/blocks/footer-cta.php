@@ -32,7 +32,7 @@
             <span class="block"><?php echo get_field('header'); ?></span>
           </h2>
           <?php if(!empty($link) ) : ?>
-            <a href="<?php echo esc_url($link_url)?>" class="bg-yellow mx-auto rounded-full border border-transparent px-12 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><?php echo esc_html($link_title) ?></a> 
+            <a class="menu-button bg-yellow mx-auto rounded-full border border-transparent px-12 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"><?php echo esc_html($link_title) ?></a> 
           <?php endif ?>
         </div>
       </div>

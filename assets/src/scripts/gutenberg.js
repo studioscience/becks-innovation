@@ -4,3 +4,4 @@
 import './blocks/cta.js';
 import './blocks/logo-slider.js';
 import './blocks/resources.js';
+import './blocks/modal.js';

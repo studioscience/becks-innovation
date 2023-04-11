@@ -72,7 +72,7 @@ window.addEventListener("scroll", function() {
 			</a>
 		</h1>
 		<div class="header-cta">
-			<button type="button" id="open-modal" class="menu-button bg-yellow mx-auto rounded-full border border-transparent px-12 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's Talk</button>
+			<button type="button" id="open-modal" class="menu-button bg-yellow rounded-full border border-transparent px-12 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's Talk</button>
 		</div>
 		
 	</header><!-- #masthead -->

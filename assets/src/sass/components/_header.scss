@@ -3,7 +3,7 @@ header#masthead {
   display: flex;
   align-items: center;
 	transition: .2s background-color ease;
-	z-index: 9999;
+	z-index: 1000;
 
 	.logo .trigger {
 		display: none;

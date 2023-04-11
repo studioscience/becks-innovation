@@ -9,7 +9,7 @@
   }
 ?>
 
-<div class="schedule hidden fixed overflow-scroll top-0 w-full justify-center bg-beige !z-50 <?php echo esc_attr($className); ?>" id="schedule-modal">
+<div class="schedule hidden fixed overflow-scroll top-0 w-full justify-center bg-beige <?php echo esc_attr($className); ?>" id="schedule-modal">
   <div class="px-8 pt-20 relative w-full">
     <div class="schedule-wrap border-x-2 border-t-2 rounded-t-lg border-tan relative">
       <div class="absolute right-0 lg:mr-10 lg:mt-5">
@@ -56,7 +56,7 @@
         </div>
         <div class="lg:w-1/2 lg:py-20">
          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget rounded-xl overflow-hidden shadow-lg" data-url="https://calendly.com/kevin-deal/30min?hide_landing_page_details=1" style="max-width:439px;height:594px;"></div>
+         <div class="calendly-inline-widget" data-url="https://calendly.com/d/nhgt-k69k/intro-to-becks-hybrids-innovation" style="max-width:439px;height:594px"></div>
           <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           <!-- Calendly inline widget end -->
         </div>
