@@ -58,7 +58,7 @@
 	<div class="arrows-box"></div>
 	<div>
     <img class="hidden md:inline-block absolute top-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-    <img class="absolute bottom-0 right-0 z-0 transform -scale-x-100" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
+    <img class="hidden md:inline-block absolute bottom-0 right-0 z-0 transform -scale-x-100" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
   </div>
 </div>
 <script>
