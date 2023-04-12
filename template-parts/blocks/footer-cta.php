@@ -27,8 +27,8 @@
   <?php if(is_array($link) ) : ?>
     <div class="max-h-auto <?php echo esc_attr($className); ?>" style="<?php echo $background_style; ?>">
       <div class="w-full footer-cta">
-        <div class="mx-auto my-auto max-w-2xl px-4 sm:px-6 h-screen  relative flex flex-col justify-center">
-          <h2 class="font-medium text-white pb-20 text-center text-4xl">
+        <div class="mx-auto my-auto max-w-5xl px-4 sm:px-6 h-screen  relative flex flex-col justify-center">
+          <h2 class="font-medium text-white pb-20 text-center text-6xl">
             <span class="block"><?php echo get_field('header'); ?></span>
           </h2>
           <?php if(!empty($link) ) : ?>
