@@ -57,6 +57,8 @@
     </div>
   </div>
   <img class="hidden md:inline-block absolute top-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-  <img class="hidden md:inline-block absolute bottom-0 -left-1 z-0" src="wp-content/themes/becks/assets/dist/images/horz-trax.png" alt="">
+  <img class="hidden md:inline-block absolute bottom-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
+  <img class="hidden md:inline-block absolute bottom-0 -left-1 z-0" src="wp-content/themes/becks/assets/dist/images/full-horizontal-trax.png" alt="">
+  <img class="hidden md:inline-block absolute bottom-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/straight-horizontal.png" alt="">      
 </div>
  
