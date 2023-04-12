@@ -56,7 +56,7 @@
       <?php endif ; ?>    
     </div>
   </div>
-  <img class="absolute top-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-  <img class="absolute bottom-0 -left-1 z-0" src="wp-content/themes/becks/assets/dist/images/horz-trax.png" alt="">
+  <img class="hidden md:inline-block absolute top-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
+  <img class="hidden md:inline-block absolute bottom-0 -left-1 z-0" src="wp-content/themes/becks/assets/dist/images/horz-trax.png" alt="">
 </div>
-
+ 

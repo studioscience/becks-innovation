@@ -34,7 +34,7 @@
   </div>
   <div>
     <img class="hidden md:inline-block absolute top-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-    <img class="absolute bottom-0 -left-11 z-0" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
+    <img class="hidden md:inline-block absolute bottom-0 -left-11 z-0" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
   </div>
 </div>
 

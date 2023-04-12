@@ -12,7 +12,7 @@
     <?php endif ?>
     </ul>
   </div>
-  <img class="absolute top-0 right-0" src="wp-content/themes/becks/assets/dist/images/whole-circle-trax.png" alt="trax graphic">
+  <img class="hidden md:inline-block absolute top-0 right-0" src="wp-content/themes/becks/assets/dist/images/whole-circle-trax.png" alt="trax graphic">
 </div>
 
 <script>
