@@ -33,7 +33,7 @@
               <div class="w-full lg:mt-0">
                 <img class="rounded-lg mx-auto md:max-w-lg pb-10 px-8" src="<?php echo esc_url($image); ?>" alt="">
               </div>
-              <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-l lg:px-10 lg:py-14">
+              <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-l lg:px-10">
                 <div class="intro">
                   <div class="flex flex-row">
                     <h3 class="text-xl font-semibold pr-6"><?php echo $name ?></h3>
