@@ -108,3 +108,11 @@ a img.aligncenter {
 
 	/* Above WP toolbar. */
 }
+
+.wp-block-cover, .wp-block-cover-image {
+	padding: 0px !important;
+
+	.wp-block-cover__inner-container {
+		color: #002E1B !important;
+	}
+}
