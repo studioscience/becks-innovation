@@ -27,7 +27,7 @@
 			<?php while( have_rows('testimonials') ) : the_row(); ?>
 				<div class="c-proof-card <?php echo esc_attr($className); ?> text-black bg-cover mx-auto md:rounded-lg" id='proof card'>
 						<div class="c-card-wrap px-4 sm:px-6 lg:px-14">
-								<div class="c-proof-intro md:flex md:justify-evenly w-auto">
+								<div class="c-proof-intro md:flex md:justify-evenly w-auto relative">
 										<div class="px-2">
 											<div class="max-w-[200px]">
 												<?php
@@ -47,7 +47,7 @@
 											<p class="text-sm lg:text-l"c-proof-position><?php the_sub_field('proof_author_position');?></p>
 										</div>
 										<div>
-											<img class="rounded-lg relative !z-10" src="<?php the_sub_field('proof_image') ?>" alt="">
+											<img class="rounded-lg" src="<?php the_sub_field('proof_image') ?>" alt="">
 										</div>
 								</div>
 						</div>
@@ -56,9 +56,9 @@
 		<?php endif; ?>    
 	</div>
 	<div class="arrows-box"></div>
-	<div>
-    <img class="hidden md:inline-block absolute top-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
-    <img class="hidden md:inline-block absolute bottom-0 right-0 z-0 transform -scale-x-100" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
+	<div class="trax-wrap">
+    <img class="hidden md:block absolute top-0 right-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
+    <img class="hidden md:block absolute bottom-0 right-0 transform -scale-x-100" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
   </div>
 </div>
 <script>
