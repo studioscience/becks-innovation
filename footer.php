@@ -41,7 +41,7 @@
 				<?php
 					$curYear = date('Y');
 						echo '&copy' . $curYear;
-				?> Becks Innovation Inc. All Rights Reserved
+				?> Beck's Superior Hybrids. All Rights Reserved
 			</div>
 		</div>
 	</footer>
