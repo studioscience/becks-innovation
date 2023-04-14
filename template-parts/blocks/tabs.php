@@ -14,19 +14,19 @@
     <h1 class="text-2xl py-10 md:pt-20 px-6 max-w-xs mx-auto md:max-w-none lg:text-[42px] text-black"><?php echo get_field('header') ?></h1>
     <ul class="flex flex-row overflow-x-scroll scrollbar-hide max-w-sm lg:max-w-full mx-auto justify-center md:pt-[20px] -mb-px text-sm font-medium gap-8" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
         <li class="mr-2" role="presentation">
-          <button class="inline-block rounded-t-lg text-base border-b-2 text-green hover:text-black dark:text-black dark:hover:text-brand-purple border-green dark:border-brand-purple" id="first-tab" data-tabs-target="#<?php echo get_field('list_item') ?>" type="button" role="tab" aria-controls="profile" aria-selected="true"><?php echo get_field('list_item') ?></button>
+          <button class="inline-block rounded-t-lg text-base border-b-2 hover:text-black  border-green" id="first-tab" data-tabs-target="#<?php echo get_field('list_item') ?>" type="button" role="tab" aria-controls="profile" aria-selected="true"><?php echo get_field('list_item') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block rounded-t-lg text-base hover:text-black dark:text-black border-green dark:border-brand-purple" id="second-tab" data-tabs-target="#<?php echo get_field('list_item_2') ?>" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><?php echo get_field('list_item_2') ?></button>
+            <button class="inline-block rounded-t-lg text-base hover:text-black border-green " id="second-tab" data-tabs-target="#<?php echo get_field('list_item_2') ?>" type="button" role="tab" aria-controls="dashboard" aria-selected="false"><?php echo get_field('list_item_2') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="third-tab" data-tabs-target="#<?php echo get_field('list_item_3') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_3') ?></button>
+            <button class="inline-block rounded-t-lg text-base hover:text-black border-green" id="third-tab" data-tabs-target="#<?php echo get_field('list_item_3') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_3') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block whitespace-nowrap rounded-t-lg text-base hover:text-black border-green dark:text-black" id="fourth-tab" data-tabs-target="#<?php echo get_field('list_item_4') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_4') ?></button>
+            <button class="inline-block whitespace-nowrap rounded-t-lg text-base hover:text-black border-green" id="fourth-tab" data-tabs-target="#<?php echo get_field('list_item_4') ?>" type="button" role="tab" aria-controls="food" aria-selected="false"><?php echo get_field('list_item_4') ?></button>
         </li>
         <li class="mr-2" role="presentation">
-            <button class="inline-block rounded-t-lg text-base hover:text-black border-green dark:text-black" id="fifth-tab" data-tabs-target="#<?php echo get_field('list_item_5') ?>" type="button" role="tab" aria-controls="settings" aria-selected="false"><?php echo get_field('list_item_5') ?></button>
+            <button class="inline-block rounded-t-lg text-base hover:text-black border-green" id="fifth-tab" data-tabs-target="#<?php echo get_field('list_item_5') ?>" type="button" role="tab" aria-controls="robotics" aria-selected="false"><?php echo get_field('list_item_5') ?></button>
         </li>
     </ul>
   </div>
@@ -99,9 +99,9 @@
 </div>
 
 <script>
-  const activeButtonClasses = ['inline-block', 'rounded-t-lg', 'border-b-2', 'text-brand-purple', 'hover:text-black', 'dark:text-brand-purple', 'dark:hover:text-brand-purple', 'border-brand-purple', 'dark:border-galaxy']
+  const activeButtonClasses = ['inline-block', 'rounded-t-lg', 'border-b-2', 'text-green', 'hover:text-green',  'border-green', 'dark:border-green']
   const disabledButtonClasses = ['inline-block', 'rounded-t-lg', 'border-transparent', 'hover:text-gray-600', 'hover:border-gray-300', 'dark:hover:text-gray-300', 'dark:border-transparent', 'text-black', 'dark:text-gray-400',]
-  const activeTabClass = ['bg-gray-50', 'dark:bg-purple-100', 'md:flex' ,'overflow-hidden']
+  const activeTabClass = [ 'md:flex' ,'overflow-hidden']
   const disabledTabClass = ['hidden', 'p-4', 'bg-gray-50', 'dark:bg-gray-800']
   // get each button
   const physButton = document.querySelector('#first-tab');
@@ -129,8 +129,8 @@
       /* Add and remove any classes for INACTIVE */
       sonagraphers.classList.add('hidden');
       sonagraphers.classList.remove('md:flex');
-      teams.classList.add('hidden');
-      teams.classList.remove('md:flex');
+      teams?.classList.add('hidden');
+      teams?.classList.remove('md:flex');
       food.classList.add('hidden');
       food.classList.remove('md:flex');
       robotics.classList.add('hidden');
@@ -157,8 +157,8 @@
       /* Add and remove any classes for INACTIVE */
       physicians.classList.add('hidden');
       physicians.classList.remove('md:flex');
-      teams.classList.add('hidden');
-      teams.classList.remove('md:flex');
+      teams?.classList.add('hidden');
+      teams?.classList.remove('md:flex');
       food.classList.add('hidden');
       food.classList.remove('md:flex');
       robotics.classList.add('hidden');
@@ -175,10 +175,10 @@
     
     if(event.target.id === "third-tab") {
       /* Add and remove any classes for ACTIVE */
-      teams.classList.remove('hidden');
-      teams.classList.add('md:flex');
-      teams.classList.add(...activeTabClass);
-      teams.classList.remove(...disabledTabClass);
+      teams?.classList.remove('hidden');
+      teams?.classList.add('md:flex');
+      teams?.classList.add(...activeTabClass);
+      teams?.classList.remove(...disabledTabClass);
       teamsButton.classList.add(...activeButtonClasses);
       teamsButton.classList.remove(...disabledButtonClasses);
       /* Add and remove any classes for INACTIVE */
@@ -213,8 +213,8 @@
       physicians.classList.remove('md:flex');
       sonagraphers.classList.add('hidden');
       sonagraphers.classList.remove('md:flex');
-      teams.classList.add('hidden');
-      teams.classlist.remove('md:flex');
+      teams?.classList.add('hidden');
+      teams?.classList.remove('md:flex');
       robotics.classList.add('hidden');
       robotics.classList.remove('md:flex');
       physButton.classList.remove(...activeButtonClasses);
@@ -240,8 +240,8 @@
       physicians.classList.remove('md:flex');
       sonagraphers.classList.add('hidden');
       sonagraphers.classList.remove('md:flex');
-      teams.classList.add('hidden');
-      teams.classList.remove('md:flex');
+      teams?.classList.add('hidden');
+      teams?.classList.remove('md:flex');
       food.classList.add('hidden');
       food.classList.remove('md:flex');
       physButton.classList.remove(...activeButtonClasses);
@@ -252,7 +252,7 @@
       teamsButton.classList.add(...disabledButtonClasses);
       foodButton.classList.remove(...activeButtonClasses);
       foodButton.classList.add(...disabledButtonClasses);
-
+      console.log(foodButton);
     }
   }
 
