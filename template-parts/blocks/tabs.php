@@ -252,7 +252,6 @@
       teamsButton.classList.add(...disabledButtonClasses);
       foodButton.classList.remove(...activeButtonClasses);
       foodButton.classList.add(...disabledButtonClasses);
-      console.log(foodButton);
     }
   }
 

@@ -9,7 +9,7 @@
   }
 ?>
 
-<div class="schedule hidden fixed overflow-scroll top-0 w-full justify-center bg-beige !z-50 <?php echo esc_attr($className); ?>" id="schedule-modal">
+<div class="schedule hidden fixed overflow-scroll top-0 w-full justify-center bg-beige <?php echo esc_attr($className); ?>" id="schedule-modal">
   <div class="px-8 pt-20 relative w-full">
     <div class="schedule-wrap border-x-2 border-t-2 rounded-t-lg border-tan relative">
       <div class="absolute right-0 lg:mr-10 lg:mt-5">

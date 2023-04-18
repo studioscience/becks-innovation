@@ -3,7 +3,7 @@ header#masthead {
   display: flex;
   align-items: center;
 	transition: .2s background-color ease;
-	z-index: 9999;
+	z-index: 9998;
 
 	.logo .trigger {
 		display: none;
@@ -19,11 +19,18 @@ header#masthead {
 }
 
 .header-trigger {
-	background-color: white !important;
+	background-color: white;
 
 	.header-cta button{
-		background-color: white !important;
+		background-color: white;
 		border: 1px solid black;
+		transition: .3s ease-in-out;
+
+		&:hover {
+			background-color: #FFDB00;
+			color: black;
+			border: 1px solid transparent;
+		}
 	}
 
 	.logo .trigger {
