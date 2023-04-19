@@ -9,10 +9,18 @@
     &.int-one {
       top: 0;
       left: 50%;
+
+      @media screen and (max-width: 767px) {
+        top: 50%;
+      }           
     }
     &.int-two {
       top: 33.3333%;
       left: 66.6666%;
+
+      @media screen and (max-width: 767px) {
+        top: 58%;
+      }           
     }
     &.int-three {
       top: 66.6666%;
@@ -21,6 +29,10 @@
     &.int-four {
       top: 33.3333%;
       left: 33.3333%;
+      
+      @media screen and (max-width: 767px) {
+        top: 58%;
+      }        
     }
 
 
@@ -41,7 +53,7 @@
       text-transform: uppercase;
       cursor: pointer;
 
-      &:hover + .int-circle {
+      &:hover, &:focus, &:active + .int-circle {
         transform: scale(1.15);
       }
       &:hover ~ .point-description {
