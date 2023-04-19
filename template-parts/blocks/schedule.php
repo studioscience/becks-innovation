@@ -66,28 +66,31 @@
 </div>
 
 <script>
-  var modal = document.getElementById('schedule-modal');
-  var buttons = document.querySelectorAll('.menu-button');// triggers open 
-  var closeModal = document.getElementById("close-modal");// triggers close 
+  setTimeout(()=> {
+    var modal = document.getElementById('schedule-modal');
+    var buttons = document.querySelectorAll('.menu-button');// triggers open 
+    var closeModal = document.getElementById("close-modal");// triggers close 
 
-  const handleClick = () => {
-    console.log('Button clicked');
-    modal.classList.add('flex');
-    modal.classList.add('modal--active'); //active class
-    modal.classList.remove('hidden');
-  };
+    const openModal = () => {
+      console.log('Button clicked');
+      modal.classList.add('flex');
+      modal.classList.add('modal--active'); //active class
+      modal.classList.remove('hidden');
+    };
 
 
-  buttons.forEach((button) => {
-   button.addEventListener('click', handleClick);
-  });
+    buttons.forEach((button) => {
+    button.addEventListener('click', openModal);
+    });
+    
+    closeModal.addEventListener('click', function(e) {
+      modal.classList.remove('modal--active');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+
+    });
+  }, 200)
   
-  closeModal.addEventListener('click', function(e) {
-    modal.classList.remove('modal--active');
-    modal.classList.add('hidden');
-    modal.classList.remove('flex');
-
-  });
 
 
 </script>
