@@ -1,5 +1,5 @@
 <div class="relative bg-beige">
-  <div class="c-accordion md:max-w-7xl md:mx-auto py-24" id="accordion">
+  <div class="c-accordion md:max-w-7xl md:mx-auto py-24 px-4" id="accordion">
     <h1 class="text-center md:text-5xl text-3xl leading-normal font-medium pb-20"><?php echo get_field('header') ?></h1>
     <ul class="c-accordion__group border-t border-black">
     <?php if (have_rows('accordion') ):?>
