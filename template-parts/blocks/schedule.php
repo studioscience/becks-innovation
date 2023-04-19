@@ -67,14 +67,19 @@
 
 <script>
   var modal = document.getElementById('schedule-modal');
-  var openModal = document.getElementById("open-modal");// triggers open 
+  var buttons = document.querySelectorAll('.menu-button');// triggers open 
   var closeModal = document.getElementById("close-modal");// triggers close 
 
-  openModal.addEventListener('click', function(e) {
+  const handleClick = () => {
+    console.log('Button clicked');
     modal.classList.add('flex');
     modal.classList.add('modal--active'); //active class
     modal.classList.remove('hidden');
+  };
 
+
+  buttons.forEach((button) => {
+   button.addEventListener('click', handleClick);
   });
   
   closeModal.addEventListener('click', function(e) {
@@ -84,4 +89,8 @@
 
   });
 
+
 </script>
+<!-- button.addEventListener('click', function(e) {
+   
+    }); -->
