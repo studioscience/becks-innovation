@@ -26,9 +26,12 @@
 						
 			<?php while( have_rows('testimonials') ) : the_row(); ?>
 				<div class="c-proof-card <?php echo esc_attr($className); ?> text-black bg-cover mx-auto md:rounded-lg" id='proof card'>
-						<div class="c-card-wrap px-4 sm:px-6 lg:px-14">
-								<div class="c-proof-intro md:flex md:justify-evenly w-auto">
-										<div class="px-2">
+						<div class="c-card-wrap sm:px-6 lg:px-14">
+								<div class="c-proof-intro md:flex md:justify-evenly w-auto text-center md:text-left">
+										<div class="md:order-last">
+											<img class="rounded-lg relative !z-10 mb-10 md:mb-0" src="<?php the_sub_field('proof_image') ?>" alt="">
+										</div>
+										<div class="md:px-2">
 											<div class="max-w-[200px]">
 												<?php
 														$link = the_sub_field('link')
@@ -45,9 +48,6 @@
 											<h2 class="text-sm lg:text-xl font-bold"><?php the_sub_field('proof_author');?></h2>
 											<p class="text-sm lg:text-l italic"c-proof-title><?php the_sub_field('proof_author_title');?></p>
 											<p class="text-sm lg:text-l"c-proof-position><?php the_sub_field('proof_author_position');?></p>
-										</div>
-										<div>
-											<img class="rounded-lg relative !z-10" src="<?php the_sub_field('proof_image') ?>" alt="">
 										</div>
 								</div>
 						</div>
