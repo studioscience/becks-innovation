@@ -53,7 +53,7 @@
       text-transform: uppercase;
       cursor: pointer;
 
-      &:hover, &:focus, &:active + .int-circle {
+      &:hover + .int-circle {
         transform: scale(1.15);
       }
       &:hover ~ .point-description {

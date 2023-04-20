@@ -33,8 +33,11 @@
 			<div class="footer-intro max-w-xs p md:max-w-lg mx-auto">
 				<div class="max-w-lg mx-auto">
 					<ul class="socials flex items-center justify-center">
-						<li class="vimeo"><a href="https://vimeo.com/user184258780" target="_blank"><?php include 'assets/dist/svg/vimeo.svg' ?></a></li>  
-						<li class="linkedIn"><a href="https://www.linkedin.com/company/as-software-inc./" target="_blank"><?php include 'assets/dist/svg/LinkedIn-Icon.svg' ?></a></li>
+						<li class="facebook h-12 w-12"><a href="https://www.facebook.com/BecksHybrids" target="_blank"><?php include 'assets/dist/svg/facebook.svg' ?></a></li>  
+						<li class="instagram h-12 w-12"><a href="https://www.instagram.com/BecksHybrids" target="_blank"><?php include 'assets/dist/svg/insta.svg' ?></a></li>
+						<li class="twitter h-12 w-12"><a href="https://www.twitter.com/BecksHybrids" target="_blank"><?php include 'assets/dist/svg/twitter.svg' ?></a></li>
+						<li class="tiktok h-12 w-12"><a href="https://www.tiktok.com/@beckshybrids" target="_blank"><?php include 'assets/dist/svg/tiktok.svg' ?></a></li>
+						<li class="youtube h-12 w-12"><a href="https://www.youtube.com/BecksSuperiorHybrids" target="_blank"><?php include 'assets/dist/svg/youtube.svg' ?></a></li>
 					</ul>
 				</div>
 			<div class="copyright pt-6 text-white text-center">
