@@ -22,7 +22,7 @@
         <div class="md:-ml-48 md:pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
           <ul class="interactive-chart lg:relative mb-20">
             <li class="absolute int-one rounded-full">
-              <div class="int-point absolute text-center text-sm leading-tight"><?php echo get_field('point_one_heading') ?></div>
+              <div class="int-point absolute text-center text-sm w-24 lg:text-base font-sans leading-tight"><?php echo get_field('point_one_heading') ?></div>
               <div class="int-circle w-full rounded-full"></div>
               <div class="point-description absolute int-one">
                 <span><?php echo get_field('point_one_heading') ?></span>
@@ -32,30 +32,30 @@
               </div>
             </li>
             <li class="absolute int-two rounded-full">
-              <div class="int-point absolute text-sm text-center leading-tight"><?php echo get_field('point_two_heading') ?></div>
+              <div class="int-point absolute text-sm w-24 lg:text-base text-center font-sans leading-tight"><?php echo get_field('point_two_heading') ?></div>
               <div class="int-circle w-full rounded-full"></div>
               <div class="point-description absolute int-two">
-                <?php echo get_field('point_two_heading') ?>
+                <span><?php echo get_field('point_two_heading') ?></span>
                 <p>
                   <?php echo get_field('point_two_body') ?>
                 </p>
               </div>
             </li>
             <li class="absolute int-three rounded-full">
-              <div class="int-point absolute text-sm text-center leading-tight"><?php echo get_field('point_three_heading') ?></div>
+              <div class="int-point absolute text-sm text-center w-24 lg:text-base font-sans leading-tight"><?php echo get_field('point_three_heading') ?></div>
               <div class="int-circle w-full rounded-full"></div>
               <div class="point-description absolute int-three">
-                <?php echo get_field('point_three_heading') ?>
+                <span><?php echo get_field('point_three_heading') ?></span>
                 <p>
                   <?php echo get_field('point_three_body') ?>
                 </p>
               </div>
             </li>
             <li class="absolute int-four rounded-full">
-              <div class="int-point absolute text-sm text-center leading-tight"><?php echo get_field('point_four_heading') ?></div>
+              <div class="int-point absolute text-sm text-center w-24 lg:text-base font-sans leading-tight"><?php echo get_field('point_four_heading') ?></div>
               <div class="int-circle w-full rounded-full"></div>
               <div class="point-description absolute int-four">
-                <?php echo get_field('point_four_heading') ?>
+                <span><?php echo get_field('point_four_heading') ?></span>
                 <p>
                   <?php echo get_field('point_four_body') ?>
                 </p>
