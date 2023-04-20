@@ -63,30 +63,38 @@
 
     // Positions and styles short blurbs that correspond to each title
     .point-description {
-      max-width: 340px;
       opacity: 0;
       transition: opacity .2s ease-in-out;
 
+      @media screen and (min-width: 767px) {
+        max-width: 340px;
+      }
       span {
         font-size: 20px;
         font-weight: 600;
       }
-      &.int-one {
-        top: 10%;
-        right: -95%;
-      }
-      &.int-two {
-        top: 108%;
-        right: -65%;
-      }
-      &.int-three {
-        top: 60%;
-        left: -90%;
-      }
-      &.int-four {
-        top: -25%;
-        left: -70%;
-      }
-    }
+      @media screen and (min-width: 767px) {
+        &.int-one {
+          top: 10%;
+          right: -95%;
+        }
+        &.int-two {
+          top: 108%;
+          right: -65%;
+        }
+        &.int-three {
+          top: 60%;
+          left: -90%;
+        }
+        &.int-four {
+          top: -25%;
+          left: -70%;
+        }
+      }        
+    }  
   }
+  // mobile styles inside media querie
+
+  .int-active .int-circle { transform: scale(1.15); }
+  .int-active .point-description { opacity: 1; } 
 }
