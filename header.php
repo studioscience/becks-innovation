@@ -13,7 +13,9 @@
 <html <?php language_attributes(); ?> class="scroll-smooth">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
 	<link href="/wp-content/themes/becks/assets/dist/css/style.css" rel="stylesheet">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/emj4isx.css">
