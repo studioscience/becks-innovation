@@ -9,7 +9,7 @@
   }
 ?>
 
-<div class="bg-contain bg-repeat-y bg-right relative mb-[150px] md:pb-0 <?php echo esc_attr($className); ?>" id="partnership">
+<div class="bg-contain bg-repeat-y bg-right relative mb-[150px] md:mb-0 md:mb-0 <?php echo esc_attr($className); ?>" id="partnership">
   <div class="text-center py-6 px-4 lg:px-0 max-w-4xl mx-auto lg:pt-20 lg:pb-0">
     <h2 class="md:text-5xl text-3xl leading-tight  font-medium text-black"><?php echo get_field('heading'); ?></h2>
     <div class="mt-1 mx-auto max-w-4xl leading-loose">
