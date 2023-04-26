@@ -28,36 +28,38 @@
     }
     .arrows-box {
         position: relative;
-        max-width: 80%;
+        max-width: 60%;
         margin: 0 auto;
+        z-index: 9997;
     
         .slick-next {
-            bottom: 0;
+            bottom: 50%;
             right: 0 !important;
             top: auto;
             width: auto;
+            align-items: center;
             &:before {
                 content: '';
-                background: url('../images/testimonial-arrow-right.svg');
+                background: url('../images/arrow-right.png');
                 background-size: 58px;
                 width: 60px;
-                height: 22px;
+                height: 40px;
                 background-repeat: no-repeat;
                 display: inline-block;
             }
         }
         .slick-prev {
-            bottom: 0;
+            bottom: 50%;
             right: 75px !important;
             top: auto;
             width: auto;
             left: auto;
             &:before {
                 content: '';
-                background: url('../images/testimonial-arrow-left.svg');
+                background: url('../images/arrow-left.png');
                 background-size: 58px;
                 width: 60px;
-                height: 22px;
+                height: 40px;
                 background-repeat: no-repeat;
                 display: inline-block;
             }
