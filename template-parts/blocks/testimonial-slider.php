@@ -25,7 +25,7 @@
 		<?php if( have_rows('testimonials') ): ?>
 						
 			<?php while( have_rows('testimonials') ) : the_row(); ?>
-				<div class="c-proof-card <?php echo esc_attr($className); ?> text-black bg-cover mx-auto md:rounded-lg" id='proof card'>
+				<div class="c-proof-card <?php echo esc_attr($className); ?> text-black bg-cover mx-auto /wp-content/themes/becks/assets/dist/images/trax-circle.pngmd:rounded-lg" id='proof card'>
 						<div class="c-card-wrap sm:px-6 lg:px-14">
 								<div class="c-proof-intro md:flex md:justify-evenly w-auto text-center md:text-left">
 										<div class="md:order-last">
@@ -55,7 +55,7 @@
 			<?php endwhile; ?>
 		<?php endif; ?>    
 	</div>
-	<div class="arrows-box"></div>
+	<div class="arrows-box h-12"></div>
 	<div>
     <img class="hidden md:inline-block absolute top-0 right-0 z-0" src="wp-content/themes/becks/assets/dist/images/trax.png" alt="">
     <img class="hidden md:inline-block absolute bottom-0 right-0 z-0 transform -scale-x-100" src="wp-content/themes/becks/assets/dist/images/trax-circle.png" alt="">
